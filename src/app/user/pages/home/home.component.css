@@ -1,0 +1,8 @@
+.imgHome{
+  transition: 0.3s linear;
+}
+
+.imgHome:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+}

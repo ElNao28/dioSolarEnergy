@@ -1,0 +1,7 @@
+.title {
+  transition: 0.2s linear; /* Transición suave */
+}
+
+.title:hover {
+  transform: rotate(-1deg);
+}
