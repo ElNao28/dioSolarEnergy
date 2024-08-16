@@ -1,5 +1,5 @@
 .title {
-  transition: 0.2s linear; /* Transición suave */
+  transition: 0.2s linear;
 }
 
 .title:hover {
