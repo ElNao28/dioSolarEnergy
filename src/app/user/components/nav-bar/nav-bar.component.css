@@ -5,3 +5,34 @@
 .title:hover {
   transform: rotate(-1deg);
 }
+.bar{
+  width: 0;
+  background-color: greenyellow;
+  animation: processBar linear;
+  animation-timeline: scroll(root);
+}
+.navBar{
+  animation: navBar 1s ease-in-out;
+  animation-timeline: scroll(root);
+}
+
+@keyframes navBar{
+  0%{
+    opacity: 100%;
+  }
+  20%, 100%{
+    opacity: 80%;
+  }
+}
+@keyframes processBar{
+  0%{
+    display: none;
+    width: 0%;
+  }
+  30%{
+    display: block;
+  }
+  100%{
+    width: 100%;
+  }
+}

@@ -1,5 +1,10 @@
 <app-nav-bar></app-nav-bar>
 <section>
+  <div class="w-full bg-red-400 h-96 overflow-hidden flex items-center card">
+    <img src="../../../../assets/img/logo_redondo.png" alt="logo" class="h-full opacity-75">
+  </div>
+</section>
+<section>
 
   <div class="pr-10 my-5 flex justify-center">
     <div class="bg-gray-100 px-10 py-5 rounded-md w-3/5">
@@ -125,7 +130,7 @@
         <input id="total" type="number" class="rounded-md">
       </div>
       <div class="flex justify-center">
-        <button class="bg-green-600 text-white font-bold rounded-sm py-2 px-3">Obtener cotizacion</button>
+        <button (submit)="true" class="bg-green-500 hover:bg-green-600 text-white font-bold rounded-sm py-2 px-3">Obtener cotizacion</button>
       </div>
     </form>
   </div>

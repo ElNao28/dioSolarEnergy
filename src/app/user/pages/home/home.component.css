@@ -1,3 +1,9 @@
+.card{
+  background-image: url('../../../../assets/img/background-home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .imgHome{
   transition: 0.3s linear;
 }
@@ -8,8 +14,28 @@
 }
 .container-system{
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.174);
+  transform: scale(0);
   transition: 0.5s;
+  animation: cards ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 20%;
 }
 .container-system:hover{
   background-color: rgb(248, 248, 248);
+}
+button{
+  transform: rotate(0deg);
+}
+button:hover{
+  animation: 1s jumpBtn ease-in-out;
+}
+@keyframes jumpBtn{
+  100%{
+    transform: rotate(-1deg);
+  }
+}
+@keyframes cards{
+  100% {
+    transform: scale(1);
+  }
 }
